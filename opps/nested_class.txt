@@ -1,0 +1,42 @@
+# nested class same as nested loops . 
+mean jaust we run loops inside loops same as class inside class . 
+
+a class beginner class is gone as nested class or nested of a class
+
+class Outerclass:
+    def __init__(self):
+       self.vaar = vaar
+       self.innerclassObjectName = self.innerclassObjectName() # here we just write code niche hai .
+    def method_out(self):
+       method body 
+    class InnerClassName:
+       def __inti__(self):
+          self.var = car 
+       def method_for_inner_class(self):
+          method body 
+
+realcod e---- 
+
+
+class Army:
+   def __init__(self):
+       self.name = name 
+       self.gn = self.Gun()  # here this is class which we define after .
+   def show(self):
+      print(self.name)
+   
+   # now making class 
+   class Gun :
+       def __init__(self):
+            slef.name = "ak47"
+            self.capacity = "75 round"
+            self.length = '34.3 inch'
+        def desp(self):
+            print(self.name )
+            print(self.capacity)
+            print(self.length)
+    
+
+# initializing object / instance 
+
+a = Army() # initialize outer class 

@@ -1,0 +1,72 @@
+# model is a file conatining python defination and statement . 
+- module is file conataining group of variable methods , function and classes etc . 
+- etc - list tuple dict anything related to use in python . 
+
+
+they are excuted only first time the module name is encountered in an import statement . 
+
+- the file name is the module name with suffix.py appended . 
+
+- ex mymoudle.py - here mymodule is called module -- not include .py 
+
+type of modules . 
+
+user defined module - 
+built in module : ex - array , math , numpy , sys
+
+
+: - when and why use module .
+
+    - large project not write in single file . it difficult to manage it . so we can write difffrent login into diffrent file seprately and use it into any othe py 
+      py file 
+    - help to debug , which logic return in which file . 
+
+    - reuse in nay program that need that module . 
+      ex - db login in db file - calculating logic in cal file and search in search file . 
+
+
+how to use module : - 
+
+import statement is used to import modules . 
+
+syntax : - 
+
+   import module 
+   import modual as alias name 
+   from module name impoer function 1 , function 2 , ...... function n . 
+   from modulename import # import whole file function and programe . 
+
+
+- her module can also import other modules . 
+
+
+
+: - How acces module function 
+
+
+     - import module 
+
+    module.functionname - are tghe way to call module module function . 
+
+
+     - in alias as b 
+
+    b.functionname 
+
+    - import fuunction 
+
+    functionname() 
+
+    - from moduel import x as a 
+
+    a.functionname() 
+
+    - from odule import * - means import all function 
+
+# you can do pratical .
+
+    
+
+
+
+

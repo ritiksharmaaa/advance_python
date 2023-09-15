@@ -1,0 +1,15 @@
+# hierachial inheritance 
+
+mean a parent - three child , each inherit her / his parent class
+
+class parent :
+    pass
+
+class child1(parent):
+   pass
+
+class child2(parent)
+   pass
+
+class child3(parent):
+    pass

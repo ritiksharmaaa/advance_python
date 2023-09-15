@@ -1,0 +1,96 @@
+# Python class is a group of attributes and  methods .
+
+what is attributes : -
+  Contribute are represented by variable that  content data
+
+what is methods : - 
+  method performance action or task it is similar to function
+
+how to create class :-
+
+  class Classname: -----classname(object): -- this class made by this objects - but it is not madate.
+      def __init__(self):   this is a constructor 
+         self.variable_name = value  # this two are attribute . 
+         self.variable_name = value 
+      def method_name(self):  here you saw this is similar to fucnton but this is a variable that why we put self .
+         --- body of methods .
+
+
+class - class keyword is used to create a Class.
+
+objects - Object represent the basic class name from where all classes in python are derived the class is also derived from object class this is optional.  (mean class made objects .....) 
+
+These classes also derived from object class this is optional.
+
+
+
+__init__() - This method (special methods called construtor )is used to initialize the variable this is a special method we do not call this method explicitly.
+
+
+self -Self is a variable which refer to current class instance/ object 
+
+---------rule -----------------to ---------made -------class 
+
+this class name can be any valid identifier.
+
+it can't be python reserved words.
+
+class generaly start with capital letter - 
+
+ - and that rule which we happen in python .
+
+ -------------------------
+
+
+ object is class type variable or class instant to use a class we should create an object to the glass
+
+ instance creation represent alloting memory neccesary to store the actual data of the variable .(mean en = class())
+
+ Each time you create an object of class a copy of each variable defined in class is created.
+
+ object_name = class_name() 
+ object_name = class_name(arg)
+
+
+----
+
+A block of memory is allocated on heap the size of allocated memory is to be decided from the attribute and the methods available in theclass(mobile)
+
+After alotting memoryblah the special method in it is called initialize these methods stored the initial data into the variable.
+
+Re allocated memory location address of the instance is written in two objects(realme)
+
+The memory  location is passed to self.
+
+
+
+accesing class member using object.----
+
+
+We can access variable and method of a class using class object or instance of class.
+
+object_name.variable_name
+object_name.variable_name(arg)
+
+self - Self is a default variable that contain the memory address of a current object.
+
+The variable is used to refer all the instance variable and method.
+
+
+when we create object of class the object name contains the memory location of the object.
+
+The memory location is internally passed to self as self know the memory address of the object so we can access variable and method of object.
+
+Self is the first argument to any object method because the 1st argument is always the object referencethis is automatically whether you call itself or not.
+
+def__init__(self):
+
+def how_model():
+
+
+Each time you create an object of a class a copy of each variable define in the class is created.
+
+
+
+
+

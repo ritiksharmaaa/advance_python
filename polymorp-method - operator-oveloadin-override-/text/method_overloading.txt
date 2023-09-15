@@ -1,0 +1,7 @@
+# mwthod overloading .
+
+when more than one method with the same name is defined in the same class it is known as method overloading.
+
+If python if a method is written such that it can perform more than one task it is called method overloading.
+
+We achieve method overloading by return same method with several parameter.

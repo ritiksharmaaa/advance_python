@@ -1,0 +1,8 @@
+# duck Typing .......
+
+In Python we follow up principle if its work like a duck and take like a duck it must be a duck which means python does not care about which class of object it is if it is an object and required behavior is present for that object then it will work the type of object is distinguised only  at runtime this is called as duck typing.
+
+Python does not care about which class of object it is in order to call an existing method of an object in the method is defined on the object then it will be called.
+
+
+

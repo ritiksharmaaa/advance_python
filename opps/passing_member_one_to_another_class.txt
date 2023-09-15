@@ -1,0 +1,34 @@
+# members members are all all the methods and attributes which we are defined inside a class we wanted to get all this methods and methods to an another class.
+
+members = init method , and methods inside class 
+
+class student :
+    def __init__(p , q):  -----------------------
+        self.page = p 
+        self.q = q 
+    #instance method 
+    def disp(self):
+        print(self.page)
+        print(self.q)
+                       -------------------------
+
+
+so this code between this to line is called member 
+
+now we want to pass this all functionality to new class where we know why we use static .
+
+-----------
+
+class User:
+   @staticmethod
+   def fetch_upper_functionality(upperfunction):
+       print(upperfuntcio or call it method here )
+    
+
+let call it --------------------see sending member on to another 
+
+stu = student("webpage" , "queue")  # first class insatnce 
+
+udata = user()
+u.fetch_upper_functionality(udata)  here we are passing upper functionlity to another class and use it . 
+

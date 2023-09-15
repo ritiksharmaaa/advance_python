@@ -1,0 +1,119 @@
+# namespace in python : - learn after class variable 
+
+in In Python name space represent a memory block where name are mapped to object
+
+Class Namespace - a klas maintain its own namespace known as glass namespace in the class name space the names are mapped  to class variable.
+
+instace Namespace - Every instace have it s own namespace know as insatce namespace , in the namespace the name are mapped to instance variable .
+
+------------
+
+class Mobile:
+    fb = yes  there class variable point out yes === so this yes is called namespace (mean name who getting space it ) 
+
+    we ame soe insatnce object = realme redmi geek -- this point out the class - so this is called instace name space mean (thsi all getting the fb from class ) the instace which store -- called -- insatce namespace .
+
+
+we now we we cahnge the class variable in outside so it change for all outside instace ------
+
+Note = but if you want to change  for paticular instance .
+
+so you have change instance variable model = you just change outside = fb.model = this , this is happen for only one instance object --  not for all same you have to do with class variable .
+
+so you can chage also like tht :- 
+
+instance.classvariable = "change value "
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+instance methods --------------
+
+-- accessor methods 
+-- mutator methods 
+
+
+class methods ------------ in variable class or static are same but it hase diffrent in methods .....
+
+static methods -------------
+
+: -------
+
+
+-----------------instance methods ---------------
+
+instant methods are the method which act upon the instant variable of the class 
+instance methods need to know the memory address of the instance which is provided
+ through self variable by default as first parameter for the instant method.
+
+
+-------it a normal method which we made inside class objects .------------
+
+
+
+-------------------class MEthods -------------------
+# first First method is CLS in class methods .
+
+# we have You have two type of methods first one is with parameter and second one is without parameter.
+
+# so inside methods you can use is manuplate it any many more .
+
+# calling class methods without argument 
+
+# class Monile : @classmethod(cls): def Show_model(cls)
+
+
+realme = Monile()
+realme.show_model() # that way you use class methods withourt parameter .
+
+--------
+
+class Mobile:
+    fb = 'yes'
+    @classmethod
+    def show_table(cls , r )
+        cls.ram = r   # here we are setting value .
+
+
+
+calling class method with parameter 
+
+realme.show_model(paramter which is define in function )
+
+
+
+
+-----------------------static methods --------------------
+
+static method are used when some processing is related to the class but does not need the class or its instance to perform any work.
+
+The huge static method when we want to pass some variable from outside and perform some action in the method.
+
+(mean do or get some data from otside and run in class inside fucntion / methods )
+
+decorator - - 
+
+@ decorator -@staticmethod - Need to write about the static methods
+
+syntax : - 
+
+@staticmethods 
+def get_data():
+    fetch data from 
+    run some calulation and use inside it . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

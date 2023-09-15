@@ -1,0 +1,77 @@
+The mechanism of deriving a new class formed an old one existing class such that the new class inherit all the member variableand method of old class is called inheritance or derivation.
+
+suoer class and subclass  ----------------
+
+The old glass is referred to as a super class and the new one is called the subclass. 
+
+other name used : - 
+
+parent class - base class / superclass 
+childclass - derived class or sub class . 
+
+exampl e: -
+
+  farther class property - home , money .business
+  son class - have , bmw , job or inherit father class 
+
+  becuase whatever father have i ultimately is son property . 
+
+
+  -------------some methods and way of caode is not have in other programing language -------
+
+
+  All classes in python are built from a single super class called object so whenever we create a class in python object will become super class for the internally.
+
+  class Mobile(object):
+      
+
+The main advantage of inheritance is code reusability.
+
+
+
+-----------------why do we need inheritancwe -------
+
+suppose we have two class employe and manger . 
+
+thay have so many methody same in employe and manager , and some difrrent method in both class. 
+
+here we have to eirite this methods twice which have same . 
+
+
+-------------type of inheritance ------------
+
+we have four type of inhertance : - 
+
+single inheritance 
+multi-level inhertance 
+hieararchical inheritance 
+muliple inhertance 
+
+
+declartion or derivation of class . 
+
+class childclass(parentclass):
+     memeber of child class 
+
+
+-----------------------single inhertance --------
+
+If a class is derived from one base class parent class is called single inheritance.
+
+
+object to father class to son class .
+
+
+syntax : - 
+
+ classs parentclass(objet):
+    memeber of parent class 
+class childclass(parentclass):
+    member of child class 
+
+example : - 
+
+class father:
+   memebr of class father 
+class son(father):
+    member of son class . 

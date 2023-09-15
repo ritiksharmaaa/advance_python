@@ -1,0 +1,130 @@
+# constructor 
+
+type of method called constructor four initializing the instant variable of class.
+
+A class constructor if defined is called whenever a program creates an object of that class.
+
+Constractor  is called once at a time of creation and instance.
+
+If two instances are created for a class the constructor will be called once for each instance.
+
+constructor without parameter ---------
+
+class Mobile :
+   def __init__(self):
+       self.model = 'realmex'
+   
+with parameter -----
+
+def __init__(self , a  , v=80 ): v mean pass v else v is 80 value .
+   self.model = a 
+
+
+
+
+
+------------type of variable in instance variable --------------
+
+- instance variable 
+
+ - class variable / static variable 
+---------------------
+
+instance variable : - instance variable are the variable which separates copy is created in every object
+
+instancense variable are defined and initialized using a constructor with self parameter.
+
+
+class mobile :
+   def __init__(self . m):
+       self.model = m  ----------------# this is called instance variable .
+
+
+with instance method - accesing ---------------- inside :
+
+Who exist instance variable we need instance matter self as for perimeter then we can access instance variable using self dot variable _name.
+
+
+
+class mobile :
+   def __init__(self . m):
+       self.model = m   #instance variable 
+   def show_data(self):  # instance methods 
+       self.model  # accesing instance variable
+
+instance methods accesing --------------------------outside .
+
+We can access instance s variable using object _name.variable _name.
+
+
+class mobile :
+   def __init__(self . m):
+       self.model = m   #instance variable 
+   def show_data(self):  # instance methods 
+       self.model  # accesing instance variable
+
+reslme = Mobile()
+realme.model (you can prin it or change it ) this is getting instance variable outside class .
+
+
+impo : - Instruments were a 1 are the variable who separate copy is created in every object if we modify the copy of instance variable is an instance it will not defect all the copies in the other instance.
+
+
+example : - 
+
+if we cahge instance realme , reslme model = somethng 
+
+it not mean in other instance redmi model also change  no because .each instance have there own copies .
+
+
+class variable /  static variable in python : ------------------
+
+
+Class variable are the variable whose single copies of label to all the instance of the class if we modify the copy of class variable in an instance it will affect all the copy in the other instance.
+
+
+
+example : - 
+
+ class mobile :'
+     fb = 'yes'  this variable are the classs variable . 
+     def __init__(self):
+         self.model = 'realmex'
+
+    
+reamle = monile()
+
+------how accesing class variable . 
+
+Two axis class variable we need class method with CLS as first parameter then we can access class variable using CLS dot variable _name.
+
+to use it class variable we need to use decorator . 
+
+@class methods 
+
+access inside methods this variable like that 
+
+
+class mobile:
+fb = 'yes'
+   constructor 
+@classmethod
+def Is_fb(cls):    - cls is first parameter 
+   cls.fb     - here we are accesing variable in class method 
+
+
+accesing outside the variable getting : - 
+
+using classname.variable 
+
+
+----------this id difrent for accesing instance variable ------
+
+
+
+
+
+
+
+
+

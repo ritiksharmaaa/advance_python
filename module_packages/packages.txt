@@ -1,0 +1,106 @@
+Packages are a way of structuring python module namespace by using dotted module names.
+dotted module names .
+
+- A package can have one or more module which means a package is a collection of module and packages.
+
+A package can contain packages package is nothing but a directory/folder . 
+
+mean : - package mean file inside file . 
+
+
+create packages : - 
+
+Packages is nothing but a directory- folder which must contain a special file. 
+
+calles __init__.py 
+
+
+__init__ = what they do ? - I love you file can be empty it indicate that the directory its contain is a python package so it can be imported the same way a model can be imported. 
+
+
+
+: - How can import packages : - 
+
+Note : It is not mandatory it can also work when you are not initialise these files 
+
+
+syntax : - 
+
+import packagename/foldername import module 
+or 
+import packagename.subpackagename.modulename import function . 
+
+ex : - 
+
+import admin.service  here service is py file which conatain function . 
+- 
+import admin.common.footer . 
+
+
+--------------------------- how to acces variable function methods , class etc --------------------------------
+
+function: - 
+
+ import admin.servie.function() 
+from package import module name 
+
+
+
+----------------------how we can acces 10/8 module -------------
+
+apop package __in it __dot PY code define a list name __all __it is taken to be the list of module named that should be imported when from package import star is encounter. 
+
+. write this code inside __init__ file 
+
+
+__all__  = ['all module name list ']
+
+access 
+
+from package import * - this can run __all__ import module . 
+
+
+
+-------------------------------------------------note ----------
+
+
+we have sms fiolder have multiple packages admin calcuate service user tech . you can run a apckage pf user inside a reguest.py , where you can import package of tech . than when you run package of user to go to user dir . and run python request.py -- it failed because . 
+
+
+the package which you import like that form tech import product  in user - request .py file . 
+
+
+note this package are not inside user folder so how you import tech product module in that dir .
+
+
+here that package is availabe in sibling package dir . 
+
+tech , user 
+
+tech have product module , user have request module 
+
+how we can run . 
+
+
+to run we have to reach top where we can see all sibiling package an on that dir 
+
+we have run python -m user.request.py  - 
+
+
+here -m flag what they do : - 
+
+here m - run libirary and module as a script - terminate option list . 
+
+----------------------other methods ------------------------------
+
+
+import sys 
+
+sys.path.appen('path of the packagewhcih we use ')
+
+import request : - here this is import from origin package .woth we append it . 
+
+
+------------than you can run this in diffrent styile ----
+
+cd dir or that folder , and run python request.py 

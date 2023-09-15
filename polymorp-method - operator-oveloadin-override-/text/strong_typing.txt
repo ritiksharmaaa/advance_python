@@ -1,0 +1,17 @@
+# strong typing 
+
+We can check whether the object passed to the method has the method being invoke or not.
+
+we use
+
+hasattr() Function is used to check whether the object has a method or not.
+
+how it work it take two parameter - 
+
+hasattr(object , attribute)
+
+
+When attribute can be a method or variable if it is found in the object then the method return true else false . 
+
+
+implement in duck typing file.py 

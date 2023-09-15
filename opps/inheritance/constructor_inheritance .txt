@@ -1,0 +1,53 @@
+
+------------------constructor in inheritance ----------------------
+
+By default the constructor in the paint class is available to the child class class father.
+
+work when child not have constructor------------ 
+
+
+class father:
+    def __inti__(self):
+        self.money = 1000 
+        print("father class constructor")
+class son(father):
+    def disp(self):
+        print("instance method of son class " , self.money)
+
+
+when ever we make insatnce of son father instance run automatically . 
+
+suppose of parent consrructor take argumetn how it can pass . so you have to pass data in yor child class , it automatically goes upto parwnt class constructor . 
+
+
+
+------------------constructor overiding ---------------------
+
+If we write construction in the both laws parent class and child class then the parent class constructor is not available to the child class. 
+
+In this case only child class construction is accessible which means child class constructor is replacing parent class constructor.
+
+Constructor overriding is used when programmer want to modify the existing behavior of a constructor.
+
+exmp -
+
+class father :
+   def __init__(self):
+       self.money = 1000
+       print("parent xlass constructor")
+class son(father):
+   def __init__(self):
+       self.money = 5000 
+       print("son class constructor")
+
+
+
+--------------------constructor with super methods ----------------
+
+If we write constructors in both class parent class and children class then the parent class constructor is not available to the child class.
+
+in this case only child class constructor is accessible which means child class constructor is replacing parent class constructor.
+
+super() - Method is used to call parent class constructor or methods from the child class.
+
+

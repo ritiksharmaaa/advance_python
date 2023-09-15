@@ -1,0 +1,38 @@
+If a class is derived from more than one parent class than its called multiple inherited.
+
+
+here fater and motehr two parent - and on child who inherit father or mother property . 
+
+class father:
+   pass
+class mother:
+   pass 
+class son(father , mother ):
+    pass 
+
+
+    here this two parameter in inhertance called multiple inhertance . 
+    
+
+
+Mro ---------------- method resolution order ()Mro
+
+
+In the multiple inheritance scenario member of Class R search for in the current class if not found then source continuously into parent class in depth - first left to right manner without searching the same class twice.
+
+
+mean - 
+
+search for the child class before going to its parent class.
+
+- when a class is inherited from several classes it search in the order from left to right in the parent class.
+
+- it will not visit any class more than once which means a class in the inheritance hierarchy is transverse on me once exactly.
+
+-------------
+
+
+firs son con call now it never call agin . thanit call father 
+than father con call and his constructor call - than super call for object here not have constructor 
+
+so it gos downwar mean left to mother - call moterh constructor here super call for object , but it never call construnctor who call alreday so here object end constructor on moterh . 

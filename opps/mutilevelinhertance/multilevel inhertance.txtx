@@ -1,0 +1,16 @@
+In multi - level inheritance the class inherit the feature of another derived class child class.
+
+
+here works as - 
+
+parent - son - grandson 
+
+mean son inherit father , than grandon inherit son(because it a father of grandson )
+
+
+class Father:
+     memebr of father class 
+class son(Father):
+    member of son class 
+class grandson(son):
+    member of grandson 
