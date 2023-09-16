@@ -1,0 +1,135 @@
+# abstract class 
+
+a class derived from EBC class which belong to abc module is known as abstract class in python.
+
+in django we make abstract user class do make our own user class . 
+
+abc class is know as Meta class which means a class that define the behaviour of other classes . So we can say meta class abc defines that the class which is derived from it becomes an abstract class . ( mean when you inherit class . your behaviou alredy define in that class which you inherit .)
+
+abstract class can have abstract methods and concrete methods . 
+
+abstract class need to be extends and its methods implement . 
+
+
+impo - python virtual machine can not create objects of an abstract class .
+
+ex : - 
+
+firrs you have to a class from module . 
+
+- in normal class we make class methods and static methods but in abstract you have to use abstract methods decorators . 
+
+from abc import Abc , abstactmethod  # this is actual a built in module in python .
+
+
+
+class Father(ABC):  # this class called abstrat class . 
+     # absttract methods . 
+
+---------------------Abstract methods ---------------------------
+
+ abstract method is a method whose action is redefined in the child class as for the requirement of the object.
+
+(mean in parebt class methods are made -but not define there .  we have inherit or define- mean make function with pass statement and put @abstractmethod decorater on that -  )
+
+
+abstract method 
+
+fro abc imort Abc , abstractmethod
+
+
+class Father (ABC): # this class called abstrsct class 
+    @abstractmethod   # define abstract methods 
+    def disp(self , or pass parmaete):
+        pass # this is compulsory to give passs statement    ---method without body .
+
+
+
+
+--------------------concrete methods ----------------------
+
+
+
+
+
+
+    
+
+
+
+normal class which we made in class caliied concretemethod 
+
+
+ex : 
+
+class m:
+   def show(self):  - meyhod with body 
+      print(" i am concrete methods . ")
+
+-----------------
+
+pVM can not create objects of an abstract class .
+
+It is not necessary to declare all methods abstract in a abstract class.
+
+Abstract class can have abstract method and concrete method.
+
+If there is an abstract method in a class that class must be abstract.  (mean if you use abstract you need to inherit some type of class)
+
+The abstract method of an abstract class must be defined in its child class or subclass--
+ex : 
+
+class Father(abc) have abstract method  -- if you make a chile class you need to define pass method (abstract method ) also in child and sub class .
+
+
+if you are inherit any abstract class that have abstract methods you must either provide the implementation of the method or make this class abstract.
+
+
+------------------when use abstract class ----------
+
+we use abstract class when there are some common feature shared by all the objects as they are . 
+
+
+
+ex:
+
+defence force :  # defence force is abstract class 
+
+  feature : 
+     gun = ak47 
+     area =
+
+
+we make some class by inherit : 
+
+class Army (defence force):
+    # here 
+    gun = ak47   # here this thing have auto maticall came we can just change area , gun is all redy ak 47 so we dont need to write it here . 
+    area = land 
+class Aitforce(defence force):
+    # here also 
+    gun = ak47 
+    area = air 
+class Navy(defnc force ):
+    # here also 
+    gun = ak47 
+    area = water 
+
+# here we make there class if we defien this thing in each class why we not do somethign that we can use to reduce  to wrtie code . so what happen to abstract class . 
+
+so this class is not made . it just provide that code . only it not use directly . 
+
+
+
+
+same as ---- you see interface same it work like that . 
+
+
+
+
+
+
+
+
+
+

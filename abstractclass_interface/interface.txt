@@ -1,0 +1,18 @@
+Kapil Shiva in python the interface concept is not explicitly available like available in the other language example Java.
+In Python an interface is an abstract class which contains only abstract method but not a single concrete method. Called interface
+
+
+rules : 
+
+all methods of an interface is abstract/ we cannot create objects of interface/ if a class is implementing an interface it has to define all the methods gave in that interface.
+
+ifa class doesnt implement all the method declare in the interface the class must be declared abstract.
+
+
+
+when use interface--------------
+
+We use interface when all the features need to be implement differently four different object.
+
+note : Abstract class have two or more abstract methods so it is compulsory if you wanted to use it in your child class you have to define both abstract methods otherwise if you wanted to use only one you can't use itso another example what you have to do you create a child class and make also grandchild class which inherit the child classand in child class you define first function and in grandchild class you define 2nd function so you can initialize grandchild and you can get child 1 methods and grandchild's method its help in that case the child class never be initializeor the father class is also not initialize.
+
