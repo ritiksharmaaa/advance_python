@@ -1,0 +1,32 @@
+Following module are used to work with date time and durations
+
+- time 
+
+- datetime 
+
+
+term you know : - 
+
+Epoch - The approach is the point where the time start and is platform dependent this point is take as the January first of current year 00 coolant 00 coolant 004 unix the ipos is January first 90seventy zero zero coolant zero zero coolant zero zero Utc . 
+
+Utc - UTC is coordinate universal time formally known as Greenwich means time or GMTthe asynchronous UTC is not a mistake but a compromise between English and French.
+
+dst - DST is daylight saving time and adjustment of the time zone by usually one hour during part of the year DST rule are magic determined by local law and can change from year to year.
+
+
+
+time module : - 
+
+ time() - Function the function return the time in seconds since the approach has a floating point number the specific date of the epoch and the handling of leap second age platform dependen
+ 
+ ctime() - anchal the function used to get current date and time when we pass it posts time in seconds to the function it returns corresponding date and time in string format when we do not pass each post time it return current date and time in the string format.
+ 
+ localtime() - Function the function is used to convert second into date and time it returns an objectstruck _time which can be used to access the attribute either using an index or using a name.
+ 
+ you check tabel : lots of attributes if locLTIME . 
+ 
+ 
+ -----------import ------
+ 
+ from time import ctime , time ,localtime 
+ .

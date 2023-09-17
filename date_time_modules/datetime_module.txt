@@ -1,0 +1,50 @@
+# datetime module .
+we have for class . 
+
+datetime - It handled date and time it has year month pay hour minute second and T Z info attribute.
+
+date - it handled dates of Green Gornia calendar without taking time zone into consideration it has year month and day attribute.
+
+time - it handled time assuming that everyday has exactly 24 multiplied by 60 multiplied by 60 seconds it has our mid second microsecond and TZ info attribute.
+
+timedelta - It handled duration the duration may be a difference between two daytime or daytime instant.
+
+
+
+dayetimeobject = A daytime object is a single object containing all the information from a date object and a time object.
+
+
+
+-----creating object- 
+
+
+var = datetime(yeay , month , day , hour=0 , second=0 , microsecond=0 , tzinfo=None, *, fold=0)
+
+The year month and day argument are required TZ info may be none or an essence of a teaser class the remaining argument may be integers in the following ranges.
+
+here year mpnth day is mandate . 
+
+ninyear < maxyear
+1 to 12 - for month 
+1 to 24 for our 
+0 to 60 for second 
+0 to infineite our microsecond
+fold[0 , 1]
+
+The full parameter specifies whether these was any fold in time as fold in time means a reverse back of the clock time to contribute following daylight saving time during the end of summer clock or reversed back by one hour these reverse back is a fold in time.
+
+means a slept operator using a laptop operator a couple can be unpacked and a time object can be constructed out of the value from the tuple .
+
+
+impment is same titm and date time .py 
+
+methods of dattime modules class : -                   ------------
+
+
+
+now() - 
+day , month , year , hour 
+
+
+todya() - give current date with time 
+
