@@ -1,0 +1,32 @@
+# Thread and multithreading in python: -
+
+thread is a separate flow of execution every thread has a task 
+
+Heres separates flow of Education means there are two programs these two programs don't have interdependent with the 1st program and the 2nd programthat's called thread if if program one dependent on program 2 or program 2 dependent or program 1 so at that case this is not called thread.
+
+Let's take an example Spiderman has a function called fly fly program is a separate program why depend on to calling his mother and know about his enemy dr octopus or his girlfriend MG.
+
+If you see flying does not depend on any another program just like another program is calling to mother or another program to care about his girlfriend another program to fight with his enemy.
+
+2 Second thread is call Auntie May- Here in this program we are writing code for talking your colleague this is not these program is not dependent on the flying or care about his MG girlfriend and his enemy octopus.
+
+3 - 3rd watching MG is also a thread but watching MJ is dependent on the flying or dependent on the call antique program no because in this program we are writing code for watchingso watching have what relation with flying and call.
+
+4 - Forth thinking about his enemy is also a threat thinking about the enemy what is interim dependent to watching program or the calling program or the flying program thinking isn't separate.
+
+
+So when we need these type of program where we need Spiderman having so many functions like flying watching his girlfriend thinking about his his enemy and think calling with his mother these all the things are happening at the same time so that's why here we're using a multi threading because each of the function which is patterned do is called a threadbecause each have their separate program but they all are working at the same time.
+
+
+Multithreading use of multithreading industry:-
+multimedia graphic in emissions animation video games video games , Application server and web server.
+
+
+Without multithreading you can't make good project that's why it is one of the most important topic.
+
+ex - state bank of india . 
+There isn't some user like Mohan Sohan and Deepika these all user are accessing State Bank of Indian net banking website at the same time so how this is happening.
+
+So where user is a thread so user a has no relation but user B and user B has no relation with user 3 and user 3 head on relation with user 1.
+
+

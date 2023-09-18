@@ -1,0 +1,68 @@
+# crating Thread 
+
+Thread is a class or threading is a module is used to create threats to create our own thread we need to create an object of Thread class.
+
+
+Following are the way of creating thread:- 
+
+Creating thread without using class - But third classes use there but you don't need to make the classes
+- Creating thread by creating a child class two thread class.
+- creating a thread without creating child class two thread class.
+
+These are the following methods in making a treds . 
+
+
+
+# ------------------without class thread ------------
+
+from threading import Thread 
+
+obj = Thread(target=functionname , args=(args1 , args2 , ... ))# alos a name para learn further . 
+
+target - It represents the function on which the thread will act.
+
+args -it represents a couple of argument which are passed to the function.
+
+
+-- start - 
+
+Once a thread is created it should be started by calling start() methods .
+
+
+ex - 
+
+def disp(a , b ):
+     print("iam threainf ")
+
+t = Thread(target=disp , args(10 , 20):
+t.start()
+
+
+oy you can call thread multiple time and many way : - 
+
+def disp(a , b ):
+     print(threading)
+    for i in range(5):
+        t = Thread(target=disp , args=(10 , 20))
+        t.start()
+
+
+
+# ---------------set and get ___------ thread name --: - 
+
+thread have by default there own name .
+
+by default name : - thread_1 _2 _3 and so on . 
+
+
+current_thread() - Dysfunction return current thread object
+
+getName() - every thread has a name by default to get the name of thread we can use this method.
+
+setName() - this method is used to set the name of Thread
+
+name property - This property is used to get or set name of the Thread
+
+
+
+

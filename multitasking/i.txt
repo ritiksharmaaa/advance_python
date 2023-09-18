@@ -1,0 +1,30 @@
+# multitasking 
+
+# excuting multiple task in at same time . 
+
+type of mutitasking : - 
+
+1 - process based multitasking
+2 - thread base multitasking # main focuast to this methods . 
+
+
+process based multi tasking : - 
+
+  Executing multiple task at the same time where each task is a separately independent program process is called process based multitasking it is suitable for operating system level.
+
+  (mean each task have not connection with other task , each programe do there own jobs .)
+
+  ex - you open cal in win in side you do code , or in bottom you search google .
+        here the program is work independ ex cal has not matter with code editor and google.
+
+
+
+thread based multitasking : -- 
+
+Process executing multiple task at the same time where each task is separately independent part of the same program process is called thread based multitasking each independent part is called thread it is suitable for programmatic level.
+
+
+ex : - 
+
+Example you're using a notepad in your notepad you are writing and after writing you will see that there is a red line come I am checking your spell checking so here writing is an 1 program and spell checking is one program but these both are working in the same programthis is called multi threading task.
+

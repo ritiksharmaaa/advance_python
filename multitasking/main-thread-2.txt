@@ -1,0 +1,12 @@
+# main thread 
+When we start any program python program one thread being running immediately which is called main thread of that program created by Pvm means python virtual machine.
+The main thread is creating automatically when you program is started.
+ex - 
+
+print("ritik sharma") # here is called a main thread . 
+
+while wpking with threading we have to mimport threadung module : 
+
+import threading 
+
+inside threading  we have function current_thread().getName()
