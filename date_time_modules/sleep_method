@@ -1,0 +1,21 @@
+# sleep methods . 
+
+# method use to stop programe for given amout of time . 
+import time 
+from datetime import date # fro age purpose 
+
+for i in range (20):
+    print(i)
+    if i == 10 :
+        time.sleep(0.2)
+
+
+# more calculate age of user . 
+
+dob = date(1993 , 10 , 15)
+t = date.today()
+age = t.year - dob.year - ((t.month, t.day ,) < (dob.month, dob.day))
+print(age)
+
+print(2 - False)
+print(2 -True )
