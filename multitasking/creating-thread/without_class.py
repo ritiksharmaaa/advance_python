@@ -52,3 +52,14 @@ print("main thread------------------------------ " , current_thread().name)
 
 
     
+#  hthread with constructor .
+
+class Construct_thread(Thread):
+    def __init__(self , a):
+        super().__init__(self)
+        self.a = a 
+    def run(self):
+        pritn("constrctor thread run methods ")
+
+m = Construct_thread(a)
+m.start()

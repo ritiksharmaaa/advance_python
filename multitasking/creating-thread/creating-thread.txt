@@ -64,5 +64,60 @@ setName() - this method is used to set the name of Thread
 name property - This property is used to get or set name of the Thread
 
 
+-------------------------------with class ----------------------------
 
 
+We can create our own threat child class by inheriting thread class from threading module.
+
+class CHildThread(Thread):
+    stattement 
+
+t = shuldthread() # object of child thread 
+
+show example in py file 
+
+
+-methods in thread class 
+
+
+1 - start()  - Once a thread is created it should be started by calling start methods
+2 - run() - every thread will run this method when thread is started we can override the method and write our own code as body of the method a thread will terminate automatically when its come out of the run method.
+
+join() - This method is used to wait till the thread completely executed the run method.
+
+
+----------------with constructor ----------
+seel inpy file . 
+
+
+
+
+
+
+
+
+------------------------------------------without fucction based or child class beased Thread -------------------------------
+
+# we just want to use it but not want to make thread without childclass or function class . 
+
+
+We can create an independent thread child class that does not inherit from thread class from threading module.
+
+class thread:
+     statemtnet 
+object_class = thread() 
+thread_object = Thread(target=object_class.function_name , args=(args1 , args2 ))
+
+
+
+ex : - 
+
+
+class myThread():
+     def disp(self , a , b ):
+         print(a , b )
+
+
+mthread = myThread()
+
+thread_object = Thread(target= mthear.disp , args=(23 , 34 ))
