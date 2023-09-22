@@ -1,0 +1,86 @@
+race condition : -
+
+in previous we saw a thread run way if it take 0rder drom 1 than serve also 1 how can you serve to b user if they not order it . 
+
+that problem called race condition .
+
+
+--------------element race condition ----------
+
+
+thread Threat synchronization .
+
+
+syncronization : - 
+
+ many thread  trying to access the same object can leads to problems like making data inconsistent or getting unexpected output so when a thread is already accessing an object preventing any other thread accessing the same object is called thread synchronization.
+
+ The object on which the traders synchronize is called synchronised object or mutually exclusive lock( mutex) 
+
+ 3rd synchronization is recommended when multiple threads are acting on the same object simultaneously.
+
+ it acess when we run  multiole thread are ruunig on the same object . 
+
+ Doing synchronization we have three following method: - 
+
+  using lock 
+  using rlock 
+  using semaphores 
+
+
+
+
+  locks : - 
+
+
+  Logs are typically used to synchronize access to  hard resources look can be used to lock the object in which the crade is acting a lock has only two states logged and unlocked it is created in the unlocked state.
+
+  inside with have two methods : require , realse .: --------
+
+
+Acquire coolant this method is used to change the stake to logged and return immediately when the state is logged acquire() Blog until a call to release() in another thread change it to unlocked than the acquire() call reset it to locked and return.
+
+syntax :
+
+ acuare(blocking=True , timeout = -1 ) -1 mean forever , and bloking bydefault true 
+   - true - His blog until the log is unlocked then set it to logged and returned true.
+   - false = It does not block if a call with blocking set to true would block return false immediately otherwise said the log to locked and returned to true .  usualy use . 
+
+   timeout - I'm out at Ashley when invoke with the floating - point timeout argument set to a positive value blog 4 at the moves the number of second is specified by timeout and as long as the lock cannot be acquired a timeout argued of - one specify an unbound weightit is forbidden to specify a timeout when blocking is false.
+
+   the written value is true if the lock is acquired successfully false if not for example if the timeout expiresed .
+
+
+
+
+
+release() - manny Pura the method is used to lease a lock this can call from any thread not only the thread which has acquired the lock when the lock is locked reset it to unlock and return if any other thread are blogged waiting for the lock to become unlocked allow exactly one of them to proceed.
+
+
+when invoking on an unlocked lock a runtime error is raised.
+there is no return 
+syntax: - release() 
+
+
+implenrt in race .
+
+
+
+
+
+
+
+
+
+
+how solve : - (means --)
+
+When one object is accessed by the 1 thread at that object we can prevent  the other  thread to not run.
+
+
+
+
+
+
+
+
