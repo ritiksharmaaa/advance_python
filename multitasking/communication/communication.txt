@@ -1,0 +1,59 @@
+# communication in thread . 
+
+
+two or more thread communicate with each other is called communication inside thread 
+
+
+we hae threee way to communication with thread .
+Event 
+Condition 
+Queue . 
+
+
+Event : - 
+
+  This is one of the simplest mechanism for communication between thread 1 thread singles an event and other thread wait for it.
+
+Unevent object manager and internal flag that can be shared to true which does set method and reset to falls with dark clear method the weight method block until the flag is true.
+
+
+create Event object 
+
+import Event from threading 
+
+e = Event()
+
+
+methods: - 
+
+set() - It said the internal flag to true all threats waiting for it to become true or aquandate thread that call with once the flag is true will not block at all.
+
+
+clear() -this is Rishabh the internal flag to false subsequently thread calling wait  will block until set is called to set the internal flag to 2true  again.
+
+
+is_set() - did we run through if and only if the internal flag is true.
+
+
+
+wait(timeout=NOne) - it block until the  internal flag is true if the Internet flag is true on entry return immediately otherwise blog until another thread callsset() To set the flag to true oriental option timeout occur.
+
+When the timeout argument is present and not none it should be floating point number satisfying a timeout for the operation in seconds or (fraction thereof)
+
+
+these methods return true if and only if the internal flag has been set to true either before the wait call or after the wait start so it will always return true except if time out is given and the operation time out.
+
+
+
+ex : - 
+
+
+trafic light 
+
+run if green stop when red 
+
+until green not show stop . 
+
+
+
+
