@@ -80,6 +80,67 @@ When one object is accessed by the 1 thread at that object we can prevent  the o
 
 
 
+Rlock suncronixation ---------------------*^$*^%(^%)
+
+Reentrant  log is a synchronization primitive that may be acquired multiple times by the same thread.
+
+mean same thread lock multiple time rlock .
+
+
+in standar Lock does not know which thread is currently holding the lock if the lock is held any threat that attempts to acquire it will block even if the scene thread itself is already holding the lock in such case or lock reinvent lock is used.
+
+
+a Re entrance lock must be released by the stranded acquire it once a thread has acquired a reintrained lock the same thread may acquire it againe  without broking the thread must release  it once for each time it has acquired it .
+
+
+
+
+semaphores ---------------------^&%(&^%)\
+
+this is one of the oldest synchronization primitive in the history of computer science invented by the earlyDutch computer scientist Wdsger W . Dijikstra 
+
+a semaphore  manager and internal counter which is determined by each acquire call and increment by each release call.
+
+
+The counter can never go below zero when acquiring that is zero its block waiting until some other thread call release.
+
+has a private value to check it increment or decrement . 
+
+here two thread work simtinouly and many moe thred work synvronization . 
+
+
+
+ex : - 
+
+5 thred 
+
+0 , 1 = toltal 2 work at time 
+
+when 1 thread came value  than 2 - 1 allot this thread remanig onw thread 
+
+2 thread came than 1-1 = 0 now no one othred thread came because it limit that no one thread run when counter is zero 
+
+
+than othere thread wail on of those who relea val = 1 increment acuire by onther decrement zero wait for releas any of one and furture . 
+
+
+
+ex - wifi - connection five not alloe to other than five until of them is not disconnects. 
+
+
+
+
+--------------------upper my means ------
+
+It is usually better to use the bounded xamarin classes which consider it to be an error to call release more often than you will call acquire.
+
+mean you call realse two many time but it give lot of bug . 
+
+
+
+
+
+
 
 
 
