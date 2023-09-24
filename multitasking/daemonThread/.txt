@@ -1,0 +1,61 @@
+dameon Thread . 
+
+a daemon thread is a thred which runs continuously in the background. 
+
+it provides support to non-daemon threads. 
+
+ex your mom father teher youtube teacher help you to pass exam they all are give you background support so they all are dameon thread .
+
+
+when last non demon thread terminated . automatically all daemon thread explicitly .  we are not required to terminate daemon thread explicitly.
+
+
+
+create Daemon Thread : - 
+
+rwo way : - 
+
+setDaemon(true ) or daemon = True - is used to make a thread a Daemon thread . 
+
+ex : - 
+
+
+t1 = Thread(target=disp)  #assume this is dameno thread .
+t1.setDaemon(True) now this is ready to support non daemon thread . 
+t.setDaemon = True . 
+
+
+
+setDaemon(true/false) : -  This method is used to set a thread as Damon said you can set thread as demon only before starting that thread which means active thread status cannot be changed as demon.
+
+
+if we pass through non - month ad will become demon and if false  was demon thread will become non demon.
+
+you have to do this before start methods.
+
+daemon Property : - The property is used to check whether a thread is demand or not it will return true if thread is damenon  else false
+
+isDaemon() - This method is used to check whether thread is demon or not its written true if thread is demon else false.
+
+
+--------default nature of thread .---------
+
+is main daemon or non - answer is non-daemon thread.
+
+
+rest of thred is daemon or non 
+
+
+
+- - 
+rest of the trade inherit demon nature from their parents.
+
+  - if parents read is non demand than child will be become non daemon thred .
+
+  -- If parents had a ecg one then child threat will be also become a demon thread.
+
+
+
+
+- when last non demon fad terminate automatically all demon tracks will be terminated we are not required to terminate demon thread explicitly.
+
