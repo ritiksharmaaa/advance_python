@@ -56,4 +56,74 @@ until green not show stop .
 
 
 
+condition  : - 
+
+conditon class is used to improve speed of communication between thread the condition class object is called condition varibale . 
+
+n = conditIO () here n is confdition variable .
+
+a conditionn varian;e is always associated with some kind of lock this can be passed in or one will be created by default passing one in is usefull when several condiiton variable must share the same lock . the lock is part of the condition object you dont have to track it seperatelty. 
+
+a condition is a more advance version of the event object . 
+
+create condition object : - 
+
+
+   from threading import  Condition 
+
+   cv = COndition()
+
+
+   methds : 
+
+     notify(1) -  this method is used to immediately wake up one thred waiting on the condition where n is number of thred need to wake up . 
+
+     notify_all() - this method is used to wake up all thread waiting on the condition .
+
+
+     wait(timeout=None) - This method wait until notify or until a timeout occurs if the calling thread has not acquired the lock when these method is called a runtime error is raised we terminated when invoke notify function method or notify and score all function methods the return value is true unless a given time out expiredwhen which case it is false.
+
+
+     
+queue :  - 
+
+
+the queue class of queue moduke is usefull to create a queue that hold th data produce by the producer . 
+
+the data can be taken from the queue and utilized bt the consumer.
+
+fifo - mean first in first out . 
+
+advantage . you dont need to maintaine lock . 
+
+
+create queue import Queue .
+a = Queue()
+
+
+methods : 
+
+put() - this method is used by producer to insert into queue .
+
+syntax : 
+
+q.put(i) i - item 
+
+
+get() - this method is used by consu,er to reterive item from the queue .
+
+producer.object.queue.get(i)
+
+
+
+empty() - this method return tru if queue is empty else return False . 
+
+full = this method return true if queue is full asle false .
+
+
+
+
+
+
+
 
