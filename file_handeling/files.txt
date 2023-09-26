@@ -1,0 +1,245 @@
+file is collection of date is available for programe we can reterivi use data stored in a file whenever we required .
+
+.txt : - date store in text formate .
+
+Advanatage :-
+
+- stored data is permananent someone remove it . 
+- stored data can be shared . 
+- it is possible to update or remove . 
+
+
+type of file :  two type . 
+
+text file - store character and string 
+
+binary file :  - it stored date in the form of bytes a groups of 8 bits each . it is used to store text images pdf , csv , vidio and audio . 
+
+ex .txt , .pdf , .mp4 , .mp3 . .csv 
+
+
+
+
+use : for small site use file else use database . 
+
+
+
+modes to open file : - 
+
+it tell for which  file open for which ourpose . 
+
+
+--- 
+
+
+text mode and binary mode : - 
+
+a file open in text mode treats its content as if it containe text string of the str type 
+
+when you get data from a text mode file , python first decode the raw bytes using either a platform-dependence encodeing or specified one .
+
+
+
+binary mode :- 
+
+a file open in binary mode python uses the data in the file without any decoding mode reflect the raw data in the file .
+
+
+
+--------------------------------open file 
+
+if we want to use a file or it data first we have to open it .
+
+open() - this function is used to open a file it return a pointer{mean when ever we open msoffice file his pipe cursor alway present in the first here also samee} to the beigning . 
+of the file . this open file handler or file object .
+
+syntsx : - 
+
+open( filename , mode , buffrong , encoding=None , errors=None , newline=None closdefd=None , openner=None )
+
+
+----
+
+mode - r for read w for write - it default r 
+
+bufffring - just like data vidio buffer in binary 0 in text 1 or any defult no - 8848 8454
+
+encoding - name of the encodingused to decode and encode the file , it should be used only in text mode : ex- utf-8
+
+error - an optional sgring that how encoding and decoding erros are to handel this cannot be used in binary mode , some of the standard strict , ignore , replace  etc .
+
+opner - a custom opner can be used by passing callable as opner 
+
+
+
+--------------textfilemode --------
+
+r - reading  pointer \ begning 
+w - writing  - if file not prsent it crete it .
+x- mean it is alos for write but if yiu doubt this file name is alredy exting you use x when file alredy have it will say file exting alredy erro . 
+a - appending | pointer at the end 
+r+ = for reading than writing 
+W+ open for writing and then reading , it will overide exiting file 
+a+ open for appendinf 
+
+
+--------------binary mode --------
+
+same just at b to ever mode . ab , rb , wb , xb , rb+ wb+ ab+ - just work on binary data . 
+
+
+closing file -------------
+
+
+close() - this method is used to close . 
+
+once we close the file objects  ideleted from the memory hence fike will be no longer accessible unless we open it again . 
+
+if you dont explicty close a file python garbage collector will eventually destroy the object and close the ooen for a while so you should always close thef file . 
+
+but its not good way you hve always close it . 
+
+
+
+what happen when you dont't want to close the files . 
+
+file may be corupt 
+memory utilization is not freed it may cause of insufficent memory 
+
+
+
+------------------file object variable ----------
+
+name - this show the name of specifie file 
+
+syntax: - 
+
+file_object.name 
+
+mode - file_object.mode - give file open in which mode . 
+
+this will check wheter file has closed or not 
+
+it show true of file is closed else false 
+
+
+
+----methods -- file_object  --lot we see few 
+
+readable() - check the method is used to check whether file is readable or not it return true if file is readable else return Flase 
+
+syntax :- 
+
+   file_object.readable()
+
+   same as writeable() 
+
+
+----------------------------check file exit or not --------
+
+
+is_file() - this method is used to check wheather specified file is exist or not this method belongs to path module which is sub module . 
+
+os.path.isFile(filename )
+
+if  os,path.isFile(filename):
+     than open edit and do what ever you want 
+else :
+    print(no data )
+
+
+
+
+__________________________- write a file --------------------
+
+
+write() - this method is used to store / write character or string into the file represent by file object , it return the number of chsracter written 
+
+sntax : 
+
+filez-object.write(string)
+
+use valid mode to write data 
+
+in w mode data will be overide .   so use f.write multple time so it write you multiple data at a time 
+
+
+---------------writeline ----
+
+writeline() - this method is used to store / write group of string (list tuple , set ) into file represented by the file objects .
+
+it save data in one single line or attact with each other . 
+
+
+
+----------------reading data from file 
+
+read(size) - use to read data 
+where size represnt number of bytes to be read fro the begining of the file. 
+
+when file is ommited or negative the entire file will beread and returned . 
+
+
+mutiple time read with size inrease 2 2 mean 1234 byte learn . 
+
+
+-----------------readline() -  or readlines() 
+this is used to read singe line from file .  or whole line 
+
+
+
+---------------------------------methods -- tell == seek methods . 
+
+
+tell() - this method is used to find current position of file pointer of file pointer from begining of the file position start from ()
+f = open('student.txt' , 'r')
+
+f.tell() # give you current postion of the pointer .
+data = f.read(5)  than it reed hello and his position shifted to 5 
+f.tell() tell postion 5 
+
+
+
+-------------seek 
+
+seek(position) - this method is used to move file pointer from one postion to another position . from begining of th efile . position starts from () and it must be positive number . 
+
+
+-------  use r+ w+ a+ are use same as normal --
+
+but focuus on pointer because after writing pointer at end than you reed it so nothing and vice versa 
+
+
+
+----------copy data fromone file to onother file ---
+
+
+f1 = open("student.txt, 'r' )
+f2 = open("student1.txt, 'w' )
+data = f1.read()
+f2.write(data)
+f1.close()
+f2.close()
+
+
+-----------------with statement ----------
+
+the with statement can be used while opening a file 
+
+when we open a file using with statement there is no need to close the file explicty.
+
+syntax : - open('file.txt' , 'r, w, a ') as file_object 
+
+ex : - 
+
+with open('student.txt' , 'w') as f :
+    f.read() erite what you want .
+
+
+
+
+
+
+
+
+
