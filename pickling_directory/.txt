@@ -1,0 +1,54 @@
+# pickling 
+
+pickling is a process of converting a class object into a bite disturbing so that it can be stored in 2 or 5 this is also called as object serialization.
+
+we use a pickling module to do pickling and unplicking 
+. 
+
+related things and fucntion nedd to learn pickling : - 
+
+function : - 
+
+  dump() - this function is used to perform the peckling it returns the pickled representation of the object as a bits object instead of writing it to a file.
+
+  this module belong to pickle module . 
+
+  syntax : - 
+
+  import pickle 
+
+  pickle.dump(object , file )
+
+
+
+  -------------unplicking -------
+
+  unpickling is a process where by its stream is convert back into a class object it is inverse operation of pickling this is also called a de - serialisation.
+  Pickling and unpickling should be done using binary files since they support by byte streams . 
+
+  we use picklr module to perform pickling and unpicking . 
+
+
+
+  warning : - Thickle model is not secure against enormous or malignous construct data never unpickled data received from an untrust  or an unauthorized source.
+
+
+
+  load() - these function is used to wield and pickled objects from a binary file and return it into object this method belongs to pickle module.
+
+  import pickle 
+
+  pickle.load(data or file )
+
+
+
+
+
+  --- why we need pickling
+
+  When we stored some structured data in the file and want to perform calculation that time we need pickling and unpickling.
+
+
+  mean if we want to store stud data date is like stu name , roll class , fname mname , so we store this data  in object so we can give structure way to store data .
+
+  see in practicle 
