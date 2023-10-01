@@ -1,0 +1,31 @@
+os module : - Is used to perform simple operation on direct ritesh module represent operating system dependence functionality.
+
+import os 
+
+methods os os : - 
+
+getcwd() - this method is used to know the current working directory.
+
+ex : os.getcwd()
+
+os.makedirs("parenddir"/children/grandchildren) - for make dir insided dir
+
+os.chdir("dirname) - change dir 
+
+os.rename("old" , "new")
+
+os.rmdir / os.removedirs (for all sub dir rem )
+
+os.walk() - used to see content od dir .
+
+os.walk (/path , topdown+true ooerro=None , followlinks=False )
+
+  path - It represents the directory name we can write.parenthesis inside dot to specify current directory.
+
+  ooerro - It represents what to do when an R R is detected we can give a functionality
+
+  topdown - If it is true the directory and its subdirectory are traversed in top down manner if it is false then the directory and its subdirectory are traversed in bottom up manner.
+
+  followlinks - Two to visit directly pointed to by Zimbabwe link on system that support them if false walk develop parentheses will not work down in two symbolic links that resolve two directory.
+
+  
